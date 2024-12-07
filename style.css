@@ -57,7 +57,7 @@
 
 				body {
 					background-color: var(--primary-color);
-					background-image: url(Material/Fondo.png);
+					background-image: url(Fondo.png);
 					background-size: 100% auto;
 					background-repeat: repeat;
 					transition: all 1s;
@@ -358,7 +358,6 @@
 /*Sobre mi*/
 
 	.me {
-		margin-top: 870px;
 		transition: 1s ease-in-out;
 		justify-content: space-evenly;
 	}
