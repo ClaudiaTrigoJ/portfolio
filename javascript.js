@@ -1,35 +1,22 @@
 // JavaScript Document
 
-const card = document.querySelector('.card'),
-	  sobremi = document.querySelector('.sobremi'),
+const card = document.querySelector('.wcard'),
+	  sobremi = document.querySelector('.me'),
 	  body = document.querySelector('body'),
-	  toggle = document.querySelector('.toggle');
+	  toggle = document.querySelector('.ctoggle');
 
 toggle.addEventListener('click', () => {
-		card.classList.toggle("flip");
+		card.classList.toggle("cflip");
 		body.classList.toggle("flipmode");
-		sobremi.classList.toggle("active");
+		// sobremi.classList.toggle("active");
 	})
 
 toggle.addEventListener('click',() => toggle.classList.toggle("active"));
 
-const imagengrande3 = document.querySelector('.grandecarrusel3'),
-	  punto = document.querySelectorAll('.punto');
-
-punto.forEach( ( cadaPunto , i )=> {
-	punto[i].addEventListener('click',()=> {
-
-		let posicion = i
-		let operacion = posicion * -(100/3)
-
-		imagengrande3.style.transform = `translateX(${ operacion}%)`
-
-		punto.forEach ( (cadaPunto , i )=> {
-			punto[i].classList.remove('active')
-		})
-		punto[i].classList.add('active')
-	})
+$('.carousel').carousel({
+  interval: false
 })
+
 /*
 function copiarTexto(){
 	var texto = document.getElementById("texto").innerHTML;
@@ -46,12 +33,12 @@ function copiarTexto(){
 }
 */
 
-
 function copiarTexto(){
 	var texto = document.getElementById("texto").innerHTML;
 	navigator.clipboard.writeText(texto);
 	alert("hecho");
 }
+
 /*
 document.querySelectorAll(".copy").forEach(copyButton => {
 	copyButton.addEventListener('click', () => {
