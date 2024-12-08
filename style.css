@@ -57,7 +57,7 @@
 
 				body {
 					background-color: var(--primary-color);
-					background-image: url(Fondo.png);
+					background-image: url(Material/Fondo.png);
 					background-size: 100% auto;
 					background-repeat: repeat;
 					transition: all 1s;
@@ -152,12 +152,12 @@
 			border-radius: 10px;
 		}
 
-		.Material button:hover {								/*<------Poner focus en tamaños mayores*/
+		.Material button:hover {
 			border-radius: 10px;
 			box-shadow: 0 0 0 .25em rgba(255, 255, 255, 0.75);
 		}
 
-		.Material button:focus {
+		.Material button:focus {								/*<------Poner focus en tamaños mayores*/
 			box-shadow: none;
 		}
 
@@ -245,6 +245,44 @@
 				list-style: none;
 			}
 
+			/*Contact modal*/
+
+				.modalcontact input:focus {
+					box-shadow: 0 0 0 .20em var(--primary-color);
+				}
+
+				.modalcontact textarea:focus {
+					box-shadow: 0 0 0 .20em var(--primary-color);
+				}
+
+				.modalcontact .bntreset {
+					background-color: var(--base-color);
+					color: var(--text-color);
+				}
+
+				.modalcontact .bntreset:hover {
+					opacity: 0.7;
+					color: var(--text-color);
+				}
+
+				.modalcontact .bntreset:focus {
+					box-shadow: 0 0 0 .25em var(--primary-color);
+				}
+
+				.modalcontact .bntsubmit {
+					background-color: var(--primary-color);
+					color: var(--text-color);
+				}
+
+				.modalcontact .bntsubmit:hover {
+					opacity: 0.7;
+					color: var(--text-color);
+				}
+
+				.modalcontact .bntsubmit:focus {
+					box-shadow: 0 0 0 .25em rgba(255, 255, 255, 0.75);
+				}
+
 	/*Material*/
 
 		.Material {
@@ -268,92 +306,92 @@
 			height: 1600px;
 		}
 
-	/*Gif*/                         /*<------BOOTSTRAP*/
+		/*Gif*/                         /*<------BOOTSTRAP*/
 
-		.Material button .gif {
-			height: auto;
-			z-index: 1;
-			text-shadow: 0 3px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
-		}
-
-		.Material button .gif p {
-			transition: all 1s ease-in-out;
-			display: inline;
-			font-size: 1em;
-			margin: 0;
-			background-color: var(--primary-color);
-			padding: 6px;
-			border-radius: 10px;
-			color: var(--text-color);
-			box-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
-		}
-
-	/*Video*/
-
-		.Material button .video {
-			font-size: 1.8em;
-			color: var(--primary-color);
-			position: absolute;
-			transition: color 1s ease-in-out;
-			margin: 6px 13px;
-			height: auto;
-			z-index: 1;
-			text-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
-		}
-
-	/*Juego*/
-
-		.Material button .juego {
-			font-size: 1.8em;
-			color: white;
-			position: absolute;
-			transition: color 1s ease-in-out;
-			margin: 10px;
-			height: auto;
-			z-index: 1;
-			text-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
-		}
-
-	/*Carrusel*/
-
-		.carouselborderr {
-			border-radius: 10px;
-		}
-
-		.imgcarousel {
-			height: 100%;
-			background-color: var(--background-color);
-			object-fit: cover;
-		}
-
-		.carousel .carouselindicators {
-			height: 15px;
-			width: 15px;
-		}
-
-		/*Next-Previous button*/
-
-			.carousel .carouselcontrolpn i {
-				font-size: 2.2em;
-				top: 0;
-				right: 0;
-				text-shadow: 0 5px 0 var(--shadow-color), 0 0 4px var(--shadow-color);
-				opacity: 1;
-				z-index: 2;
-				transition: all 0.2s ease-in-out;
+			.Material button .gif {
+				height: auto;
+				z-index: 1;
+				text-shadow: 0 3px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
 			}
 
-			.carousel .carouselcontrolpn i:hover {
-				text-shadow: 0 0 2px black;
+			.Material button .gif p {
+				transition: all 1s ease-in-out;
+				display: inline;
+				font-size: 1em;
+				margin: 0;
+				background-color: var(--primary-color);
+				padding: 6px;
+				border-radius: 10px;
+				color: var(--text-color);
+				box-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
 			}
 
-			.carousel .carouselcontrolpn {
-				width: 10%;
+		/*Video*/
+
+			.Material button .video {
+				font-size: 1.8em;
+				color: var(--primary-color);
+				position: absolute;
+				transition: color 1s ease-in-out;
+				margin: 6px 13px;
+				height: auto;
+				z-index: 1;
+				text-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
 			}
 
-			.carousel .carouselcontrolpn:hover {
-				box-shadow: none;
+		/*Juego*/
+
+			.Material button .juego {
+				font-size: 1.8em;
+				color: white;
+				position: absolute;
+				transition: color 1s ease-in-out;
+				margin: 10px;
+				height: auto;
+				z-index: 1;
+				text-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
 			}
+
+		/*Carrusel*/
+
+			.carouselborderr {
+				border-radius: 10px;
+			}
+
+			.imgcarousel {
+				height: 100%;
+				background-color: var(--background-color);
+				object-fit: cover;
+			}
+
+			.carousel .carouselindicators {
+				height: 15px;
+				width: 15px;
+			}
+
+			/*Next-Previous button*/
+
+				.carousel .carouselcontrolpn i {
+					font-size: 2.2em;
+					top: 0;
+					right: 0;
+					text-shadow: 0 5px 0 var(--shadow-color), 0 0 4px var(--shadow-color);
+					opacity: 1;
+					z-index: 2;
+					transition: all 0.2s ease-in-out;
+				}
+
+				.carousel .carouselcontrolpn i:hover {
+					text-shadow: 0 0 2px black;
+				}
+
+				.carousel .carouselcontrolpn {
+					width: 10%;
+				}
+
+				.carousel .carouselcontrolpn:hover {
+					box-shadow: none;
+				}
 
 /*Sobre mi*/
 
@@ -367,6 +405,10 @@
 		border-radius: 10px;
 		box-shadow: 5px 5px 4px 0px var(--shadow-color);
 		transition: background-color 1s ease-in-out;
+	}
+
+	.media img {
+		width: 200px;
 	}
 
 	.me .texto {
@@ -439,26 +481,31 @@
 	}
 
 	footer ul li i {
-		font-size: 1.8em;
+		font-size: 2.6em;
 	}
 
 	footer ul li p {
-		font-size: 1.2em;
+		font-size: 2em;
 		color: var(--secundary-text-color);
 	}
 
 	footer ul li .button-contact {
 		transition: background-color .5s ease-in-out;
 		background-color: var(--primary-color);
-		padding: 6px 8px 6px 8px;
+		padding: 10px 10.4px 6px;
 		border: none;
 		border-radius: 5px;
 		outline: none;
 		cursor: pointer;
+		transition: all .2s;
+	}
+
+	footer ul li .button-contact:hover {
+		opacity: 0.8;
 	}
 
 	footer ul li .button-contact:active {
-		filter: grayscale(80%);
+		filter: grayscale(100%);
 		opacity: 0.8;
 	}
 
@@ -470,7 +517,7 @@
 	}
 
 	footer ul li .button-contact i {
-		font-size: .85em;
+		font-size: 1.2em;
 		color: white;
 	}
 
@@ -488,6 +535,11 @@
 		font-size: 1em;
 		color: white;
 		padding: 4px;
+	}
+
+	footer  ul li .button-contact:focus {
+		border-radius: 5px;
+		box-shadow: 0 0 0 .15em rgba(255, 255, 255, 0.75);
 	}
 
 	@media (min-width: 576px) {
