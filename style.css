@@ -192,7 +192,7 @@
 
 				.modal-header .closebutton {
 					color: var(--primary-color);
-					font-size: 2.5em;
+					font-size: 3em;
 					top: 0;
 					right: 0;
 					text-shadow: 0 5px 0 var(--shadow-color), 0 0 4px var(--shadow-color);
@@ -216,7 +216,7 @@
 
 			.modal-body .texto h2 {
 				color: var(--primary-color);
-				font-size: 3.2em;
+				font-size: 3.8em;
 				font-family: "Shrikhand";
 				letter-spacing: 3px;
 				transition: color 0.2s ease-in-out;
@@ -237,7 +237,7 @@
 			}
 			
 			.modal-body .texto p {
-				font-size: 1.8em;
+				font-size: 2.4em;
 			}
 
 			.modal-body .iconos {
@@ -246,6 +246,28 @@
 			}
 
 			/*Contact modal*/
+
+				.modalcontact input, .modalcontact textarea, .modalcontact span {
+					font-size: 2.5em;
+					border-radius: 10px;
+				}
+
+				.modalcontact .closebutton {
+					font-size: 2em;
+				}
+
+				.modalcontact .cname {
+					border-radius: 10px 10px 0 0;
+				}
+
+				.modalcontact .cfirstname {
+					border-radius: 10px 10px 0 0;
+				}
+
+				.modalcontact .clastname {
+					
+					border-radius: 0 0 10px 10px;
+				}
 
 				.modalcontact input:focus {
 					box-shadow: 0 0 0 .20em var(--primary-color);
@@ -317,7 +339,7 @@
 			.Material button .gif p {
 				transition: all 1s ease-in-out;
 				display: inline;
-				font-size: 1em;
+				font-size: 2em;
 				margin: 0;
 				background-color: var(--primary-color);
 				padding: 6px;
@@ -329,7 +351,7 @@
 		/*Video*/
 
 			.Material button .video {
-				font-size: 1.8em;
+				font-size: 2.8em;
 				color: var(--primary-color);
 				position: absolute;
 				transition: color 1s ease-in-out;
@@ -342,7 +364,7 @@
 		/*Juego*/
 
 			.Material button .juego {
-				font-size: 1.8em;
+				font-size: 2.8em;
 				color: white;
 				position: absolute;
 				transition: color 1s ease-in-out;
@@ -372,7 +394,7 @@
 			/*Next-Previous button*/
 
 				.carousel .carouselcontrolpn i {
-					font-size: 2.2em;
+					font-size: 3em;
 					top: 0;
 					right: 0;
 					text-shadow: 0 5px 0 var(--shadow-color), 0 0 4px var(--shadow-color);
@@ -424,12 +446,12 @@
 	.me .texto h2 {
 		font-family: "Shrikhand";
 		color: var(--text-color);
-		font-size: 3.2em;
+		font-size: 3.8em;
 	}
 
 	.me .texto p {
 		color: var(--secundary-text-color);
-		font-size: 2em;
+		font-size: 2.6em;
 	}
 
 	/*Programas*/
@@ -451,12 +473,12 @@
 		}
 
 		.me .texto ul li .programa h5{
-			font-size: 1.8em;
+			font-size: 2em;
 		}
 
 		.me .texto ul li .programa div{
 			border-radius: 50px;
-			height: 2.2em;
+			height: 2.8em;
 		}
 
 		.me .texto ul li .progress .primary-color {
@@ -481,11 +503,11 @@
 	}
 
 	footer ul li i {
-		font-size: 2.6em;
+		font-size: 3em;
 	}
 
 	footer ul li p {
-		font-size: 2em;
+		font-size: 2.4em;
 		color: var(--secundary-text-color);
 	}
 
@@ -517,7 +539,7 @@
 	}
 
 	footer ul li .button-contact i {
-		font-size: 1.2em;
+		font-size: 1.6em;
 		color: white;
 	}
 
@@ -532,7 +554,7 @@
 	}
 
 	footer ul li .button-contact:disabled span {
-		font-size: 1em;
+		font-size: 2em;
 		color: white;
 		padding: 4px;
 	}
