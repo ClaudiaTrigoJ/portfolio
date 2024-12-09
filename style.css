@@ -76,6 +76,7 @@
 					font-size: 1.8em;
 					justify-content: space-evenly;
 					transition: color 1s ease-in-out;
+					text-decoration: none;
 				}
 
 				nav .navbarbrand img {
@@ -107,8 +108,8 @@
 					color: var(--primary-color);
 				}
 
-				#works, #me, #contact  {
-					scroll-margin-top: 75px;
+				#works, #me, #contact, #title {
+					scroll-margin-top: 140px;
 				}
 
 				#title {
