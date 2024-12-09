@@ -17,7 +17,13 @@ $('.carousel').carousel({
   interval: false
 })
 
+function copiarTexto(){
+	var texto = document.getElementById("texto").innerHTML;
+	navigator.clipboard.writeText(texto);
+	alert("hecho");
+}
 
+/*
 function copiarTexto(){
 	var texto = document.getElementById("texto").innerHTML;
 	const copyButton = document.getElementById("copy");
@@ -32,14 +38,6 @@ function copiarTexto(){
 	})
 }
 
-/*
-function copiarTexto(){
-	var texto = document.getElementById("texto").innerHTML;
-	navigator.clipboard.writeText(texto);
-	alert("hecho");
-}
-
-/*
 document.querySelectorAll(".copy").forEach(copyButton => {
 	copyButton.addEventListener('click', () => {
 		const targetElement = document.querySelector(copyButton.dataset.copy);

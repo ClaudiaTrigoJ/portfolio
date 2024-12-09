@@ -113,7 +113,11 @@
 				}
 
 				#title {
-					height: 41VH;
+					height: 30VH;
+				}
+
+				.Encabezado {
+					height: 100%;
 				}
 
 			/*toggle*/
@@ -598,8 +602,16 @@
 		border-radius: 5px;
 		box-shadow: none;
 	}
+    
 
-	@media (min-width: 576px) {
-    .modal-dialog {
-    	max-width: none;
-    }
+@media (min-width: 768px) {
+
+	.modal-dialog {
+	    	max-width: none;
+	    }
+
+	}
+
+@media (min-width: 992px) {
+
+}
