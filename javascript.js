@@ -17,22 +17,22 @@ $('.carousel').carousel({
   interval: false
 })
 
-/*
+
 function copiarTexto(){
 	var texto = document.getElementById("texto").innerHTML;
 	const copyButton = document.getElementById("copy");
-	copyButton.addEventListener('click', () => {
+	copyButton.addEventListener('click',() => {
 		navigator.clipboard.writeText(texto).then(() => {
 			copyButton.disabled = true;
 
 			setTimeout(() => {
 				copyButton.disabled = false;
-			}, 3000)
+			}, 5000)
 		})
 	})
 }
-*/
 
+/*
 function copiarTexto(){
 	var texto = document.getElementById("texto").innerHTML;
 	navigator.clipboard.writeText(texto);
