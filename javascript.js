@@ -20,38 +20,5 @@ $('.carousel').carousel({
 function copiarTexto(){
 	var texto = document.getElementById("texto").innerHTML;
 	navigator.clipboard.writeText(texto);
-	alert("hecho");
+	alert("Done");
 }
-
-/*
-function copiarTexto(){
-	var texto = document.getElementById("texto").innerHTML;
-	const copyButton = document.getElementById("copy");
-	copyButton.addEventListener('click',() => {
-		navigator.clipboard.writeText(texto).then(() => {
-			copyButton.disabled = true;
-
-			setTimeout(() => {
-				copyButton.disabled = false;
-			}, 5000)
-		})
-	})
-}
-
-document.querySelectorAll(".copy").forEach(copyButton => {
-	copyButton.addEventListener('click', () => {
-		const targetElement = document.querySelector(copyButton.dataset.copy);
-		const textToCopy = targetElement.textContent
-			.replace(/\s+/g, " ")
-			.trim();
-		navigator.clipboard.writeText(textToCopy).then(() => {
-			copyButton.disabled = true;
-
-			setTimeout(() => {
-				copyButton.disabled = false;
-			}, 5000)
-		})
-	})
-})
-
-*/

@@ -62,21 +62,26 @@
 					background-repeat: repeat;
 					transition: all 1s;
 					font-family: "Comfortaa", serif;
+					min-width: 400px;
 				}
 
 			/*nav*/
 
 				nav {
-					font-size: 1.5em;
+					font-size: 1em;
 				}
 
 				nav .navbarbrand {
-					color: var(--primary-color);
-					font-family: "Shrikhand";
-					font-size: 1.8em;
 					justify-content: space-evenly;
 					transition: color 1s ease-in-out;
 					text-decoration: none;
+				}
+
+				nav .navbarbrand p {
+					color: var(--primary-color);
+					font-family: "Shrikhand";
+					font-size: 1.6em;
+					transition: color 1s ease-in-out;
 				}
 
 				nav .navbarbrand img {
@@ -85,8 +90,8 @@
 				}
 
 				nav .navbarul {
-					font-size: 1.2em;
-					border-top: 3px solid var(--primary-color);
+					font-size: 1em;
+					border-top: 1px solid var(--primary-color);
 					transition: border-top 1s ease-in-out;
 				}
 
@@ -101,7 +106,7 @@
 				}
 
 				.button-nav {
-					font-size: 1.8em;
+					font-size: 1.5em;
 				}
 
 				.button-nav:focus {
@@ -109,7 +114,7 @@
 				}
 
 				#works, #me, #contact, #title {
-					scroll-margin-top: 140px;
+					scroll-margin-top: 80px;
 				}
 
 				#title {
@@ -189,23 +194,33 @@
 			box-shadow: 0 0 0 .25em rgba(255, 255, 255, 0.75);
 		}
 
-		.Material button:focus {								/*<------Poner focus en tamaños mayores*/
+		.Material button:focus {
 			box-shadow: none;
 		}
 
 		.icono {
-			width: 80px;
+			width: 50px;
 			border: 5px solid var(--primary-color);
 			background-color: var(--primary-color);
 			border-radius: 15px;
 		}
 
+		article .gcolumn {
+			transform: translateZ(100px);
+			backface-visibility: hidden;
+			height: 650px;
+		}
+
 		.heightcard {
-			height: 1620px;
+			height: 665px;
 			z-index: -1;
 		}
 
 		/*Modal*/
+
+			.modal-dialog {
+		    	max-width: none;
+		    }
 
 			.modalstyle {
 				background-color: var(--background-color);
@@ -224,7 +239,7 @@
 
 				.modal-header .closebutton {
 					color: var(--primary-color);
-					font-size: 3em;
+					font-size: 1em;
 					top: 0;
 					right: 0;
 					text-shadow: 0 5px 0 var(--shadow-color), 0 0 4px var(--shadow-color);
@@ -248,7 +263,7 @@
 
 			.modal-body .texto h2 {
 				color: var(--primary-color);
-				font-size: 3.8em;
+				font-size: 2em;
 				font-family: "Shrikhand";
 				letter-spacing: 3px;
 				transition: color 0.2s ease-in-out;
@@ -269,7 +284,7 @@
 			}
 			
 			.modal-body .texto p {
-				font-size: 2.4em;
+				font-size: 1em;
 			}
 
 			.modal-body .iconos {
@@ -277,14 +292,26 @@
 				list-style: none;
 			}
 
+			.modal-backdrop {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 1040;
+				width: 100%;
+				height: 100%;
+				background-color: #000;
+			}
+
 			/*Contact modal*/
 
 				.modalcontact input, .modalcontact textarea, .modalcontact span {
-					font-size: 2.5em;
+					font-size: .9em;
 					border-radius: 10px;
 				}
 
-				.modalcontact .closebutton {
+				.modalcontact .modal-header .closebutton {
 					font-size: 2em;
 				}
 
@@ -297,7 +324,6 @@
 				}
 
 				.modalcontact .clastname {
-					
 					border-radius: 0 0 10px 10px;
 				}
 
@@ -340,7 +366,7 @@
 	/*Material*/
 
 		.Material {
-			width: 50%;				/*<------Poner 33.33% en tamaños mayores*/
+			width: 50%;
 		}
 
 		.h100p {
@@ -354,13 +380,7 @@
 			height: auto;
 		}
 
-		article .gcolumn {
-			transform: translateZ(100px);
-			backface-visibility: hidden;
-			height: 1600px;
-		}
-
-		/*Gif*/                         /*<------BOOTSTRAP*/
+		/*Gif*/
 
 			.Material button .gif {
 				height: auto;
@@ -370,11 +390,8 @@
 
 			.Material button .gif p {
 				transition: all 1s ease-in-out;
-				display: inline;
-				font-size: 2em;
-				margin: 0;
+				font-size: 1.5em;
 				background-color: var(--primary-color);
-				padding: 6px;
 				border-radius: 10px;
 				color: var(--text-color);
 				box-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
@@ -383,11 +400,9 @@
 		/*Video*/
 
 			.Material button .video {
-				font-size: 2.8em;
+				font-size: 1.5em;
 				color: var(--primary-color);
-				position: absolute;
 				transition: color 1s ease-in-out;
-				margin: 6px 13px;
 				height: auto;
 				z-index: 1;
 				text-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
@@ -396,11 +411,9 @@
 		/*Juego*/
 
 			.Material button .juego {
-				font-size: 2.8em;
+				font-size: 1.5em;
 				color: white;
-				position: absolute;
 				transition: color 1s ease-in-out;
-				margin: 10px;
 				height: auto;
 				z-index: 1;
 				text-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
@@ -419,14 +432,14 @@
 			}
 
 			.carousel .carouselindicators {
-				height: 15px;
-				width: 15px;
+				height: 10px;
+				width: 10px;
 			}
 
 			/*Next-Previous button*/
 
 				.carousel .carouselcontrolpn i {
-					font-size: 3em;
+					font-size: 1.2em;
 					top: 0;
 					right: 0;
 					text-shadow: 0 5px 0 var(--shadow-color), 0 0 4px var(--shadow-color);
@@ -482,12 +495,12 @@
 	.me .texto h2 {
 		font-family: "Shrikhand";
 		color: var(--text-color);
-		font-size: 4em;
+		font-size: 1.8em;
 	}
 
 	.me .texto p {
 		color: var(--secundary-text-color);
-		font-size: 2.6em;
+		font-size: 1.2em;
 	}
 
 	/*Programas*/
@@ -501,7 +514,6 @@
 		}
 
 		.me .texto ul li .icono {
-			height: auto;
 			border: 5px solid var(--primary-color);
 			background-color: var(--primary-color);
 			border-radius: 15px;
@@ -509,12 +521,12 @@
 		}
 
 		.me .texto ul li .programa h5{
-			font-size: 2em;
+			font-size: 1em;
 		}
 
 		.me .texto ul li .programa div{
 			border-radius: 50px;
-			height: 2.8em;
+			height: 1.5em;
 		}
 
 		.me .texto ul li .progress .primary-color {
@@ -525,7 +537,6 @@
 		.me .texto ul li .progress p {
 			color: white;
 			line-height: 10px;
-			margin-top: .1em;
 		}
 
 /*Footer*/
@@ -539,18 +550,17 @@
 	}
 
 	footer ul li i {
-		font-size: 3em;
+		font-size: 1.4em;
 	}
 
 	footer ul li p {
-		font-size: 2.4em;
+		font-size: 1.2em;
 		color: var(--secundary-text-color);
 	}
 
-	footer ul li .button-contact {
+	footer ul li .button-contact {                         /*<------BOOTSTRAP*/
 		transition: background-color .5s ease-in-out;
 		background-color: var(--primary-color);
-		padding: 10px 10.4px 9px;
 		border: none;
 		border-radius: 5px;
 		outline: none;
@@ -575,7 +585,7 @@
 	}
 
 	footer ul li .button-contact i {
-		font-size: 1.6em;
+		font-size: 1em;
 		color: white;
 	}
 
@@ -587,13 +597,14 @@
 		transition: all 0.2s ;
 		text-align: left;
 		color: var(--primary-color);
-		font-size: 0em;
+		font-size: 0;
 		font-family: "Comfortaa", serif;
 		padding: 0;
+		display: none;
 	}
 
 	footer ul li .button-contact:disabled span {
-		font-size: 1.8em;
+		font-size: 1em;
 		color: white;
 		padding: 4px;
 	}
@@ -603,15 +614,233 @@
 		box-shadow: none;
 	}
     
+/*Height-card*/
+
+	@media (min-width: 450px) {
+
+		.heightcard {
+				height: 750px;
+			}
+
+		article .gcolumn {
+				height: 735px;
+			}
+	}
+
+	@media (min-width: 515px) {
+
+		.heightcard {
+				height: 875px;
+			}
+
+		article .gcolumn {
+				height: 860px;
+			}
+	}
+
+	@media (min-width:600px) {
+
+		.heightcard {
+				height: 935px;
+			}
+
+		article .gcolumn {
+				height: 920px;
+			}
+	}
+
+	@media (min-width:640px) {
+
+		.heightcard {
+				height: 1095px;
+			}
+
+		article .gcolumn {
+				height: 1080px;
+			}
+	}
+
+	@media (min-width:730px) {
+
+		.heightcard {
+				height: 1215px;
+			}
+
+		article .gcolumn {
+				height: 1200px;
+			}
+	}
+
+@media (min-width: 576px) {
+
+		nav .navbarbrand p {
+			font-size: 2em;
+		}
+}
 
 @media (min-width: 768px) {
 
-	.modal-dialog {
-	    	max-width: none;
-	    }
+		nav .navbarul {
+		    font-size: 1.6em;
+		    border-top: 2px solid var(--primary-color);
+		}
 
+		.button-nav {
+		    font-size: 2em;
+		}
+
+		nav .navbarbrand p {
+			font-size: 2em;
+		}
+	
+		.heightcard {
+			height: 550px;
+		}
+
+		article .gcolumn {
+			height: 535px;
+		}
+
+		.Material {
+			width: 33.3333%;
+		}
+
+		.Material button .video {
+		    font-size: 1.5em;
+		    text-shadow: 0 6px 0 var(--shadow-color), 0 0 5px var(--shadow-color);
+		}
+
+		.Material button .gif p {
+		    transition: all 1s ease-in-out;
+		    font-size: 1em;
+		    background-color: var(--primary-color);
+		    border-radius: 10px;
+		    color: var(--text-color);
+		    box-shadow: 0 5px 0 var(--shadow-color), 0 0 2px var(--shadow-color);
+		}
+
+		.icono {
+		    width: 70px;
+		}
+
+		.modal-header .closebutton {
+		    font-size: 2.5em;
+		    text-shadow: 0 6px 0 var(--shadow-color), 0 0 5px var(--shadow-color);
+		}
+
+		.carousel .carouselcontrolpn i {
+		    font-size: 2.2em;
+		    text-shadow: 0 6px 0 var(--shadow-color), 0 0 5px var(--shadow-color);
+		}
+
+		footer ul li p {
+		    font-size: 1.5em;
+		}
+
+		footer ul li i {
+		    font-size: 1.8em;
+		}
 	}
+
+/*Height-card*/
+	@media (min-width:805px) {
+
+		.heightcard {
+				height: 635px;
+			}
+
+		article .gcolumn {
+				height: 620px;
+			}
+	}
+
+	@media (min-width:850px) {
+
+		.heightcard {
+				height: 635px;
+			}
+
+		article .gcolumn {
+				height: 620px;
+			}
+	}
+
+	@media (min-width:920px) {
+
+		.heightcard {
+				height: 685px;
+			}
+
+		article .gcolumn {
+				height: 670px;
+			}
+	}
+
 
 @media (min-width: 992px) {
 
+	#works, #me, #contact, #title {
+	    scroll-margin-top: 110px;
+	}
+
+	#title {
+	    height: 45VH;
+	}
+
+	.navbarbrand {
+		max-width: 400px;
+	}
+
+	nav .navbarul {
+        font-size: 1.2em;
+        border-top: none;
+    }
+
+    .ctoggle {
+    	max-width: 155px;
+    }
+
+	.heightcard {
+			height: 715px;
+		}
+
+		article .gcolumn {
+			height: 700px;
+		}
+
+		.wcard {
+			max-width: 990px;
+		}
+
+		.Material button:focus {
+			border-radius: 10px;
+			box-shadow: 0 0 0 .25em rgba(255, 255, 255, 0.75);
+		}
+
+		.carousel .carouselcontrolpn:focus {
+			box-shadow: none;
+		}
+
+		.modalstyle {
+			max-width: 950px;
+		}
+
+		.modalstyle.large {
+			max-width: 690px;
+		}
+
+		.modalstyle.extralarge {
+			max-width: 570px;
+		}
+
+		.me {
+			max-width: 990px;
+		}
+
+		.modalcontact .modalstyle {
+			max-width: 750px;
+		}
+
 }
+
+
