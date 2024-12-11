@@ -39,6 +39,7 @@
 
 				body::-webkit-scrollbar {
 				  width: 15px;
+				  display: none;
 				}
 
 				body::-webkit-scrollbar-track {
