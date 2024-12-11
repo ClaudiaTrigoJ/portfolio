@@ -391,7 +391,7 @@
 
 			.Material button .gif p {
 				transition: all 1s ease-in-out;
-				font-size: 1.5em;
+				font-size: .9em;
 				background-color: var(--primary-color);
 				border-radius: 10px;
 				color: var(--text-color);
