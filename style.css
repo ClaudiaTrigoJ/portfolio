@@ -240,7 +240,7 @@
 
 				.modal-header .closebutton {
 					color: var(--primary-color);
-					font-size: 1em;
+					font-size: 1.3em;
 					top: 0;
 					right: 0;
 					text-shadow: 0 5px 0 var(--shadow-color), 0 0 4px var(--shadow-color);
@@ -816,6 +816,14 @@
 		.Material button:focus {
 			border-radius: 10px;
 			box-shadow: 0 0 0 .25em rgba(255, 255, 255, 0.75);
+		}
+
+		.modal-body .texto h2 {
+		    font-size: 2.5em;
+		}
+
+		.modal-body .texto p {
+		    font-size: 1.5em;
 		}
 
 		.carousel .carouselcontrolpn:focus {

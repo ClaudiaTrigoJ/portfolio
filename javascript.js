@@ -22,7 +22,3 @@ function copiarTexto(){
 	navigator.clipboard.writeText(texto);
 	alert("Done");
 }
-
-//Freezeframe JQuery
-
-new Freezeframe();
